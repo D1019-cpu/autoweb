@@ -1,0 +1,101 @@
+.product-detail-section {
+    /* background-color: #fff; */
+    background-color: #0E1315;
+    padding: 100px 0;
+}
+
+.product-detail-section .detail-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.product-detail-section .detail-top .left .default-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-detail-section .detail-top .left .default-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.product-detail-section .detail-top .left .product-desc h2 {
+    /* color: #353535; */
+    color: #fff;
+    font-size: 2.8rem;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.product-desc p.price {
+    font-weight: 500;
+    line-height: 1.8;
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+    color: #29ca8e;
+}
+
+.product-detail-section .detail-top .right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.product-detail-section .detail-top .right div img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.product-detail-section .detail-body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05    );
+}
+
+.product-detail-section .detail-body .heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.product-detail-section .detail-body .heading h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: inherit;
+    background-color: #f5f5f5;
+
+}
+
+.product-detail-section .detail-body .body {
+    padding: 15px;
+}
+
+.product-detail-section .detail-body .body p {
+    /* color: #757575; */
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 500px) {
+    .product-detail-section .detail-top {
+        grid-template-columns: 1fr;
+    }
+}

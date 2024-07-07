@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /* background-color: #fff; */
+    background-color: #0E1315;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* min-height: 2000px; */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px !important; 
+}
+
+/* Phần rãnh của thanh scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của rãnh */
+}
+
+/* Phần di chuyển của thanh scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  cursor: pointer; 
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #29ca8e;
+}
+
+.header .logo {
+    display: inline-block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    /* color: #454545; */
+    color: #fff;
+    font-weight: bold;
+    line-height: 4rem;
+    /* height: 5rem; */
+    padding: 1.5rem;
+    background-color: transparent;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0 100px;
+}
+
+.header {
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+   display: inline-block; 
+   text-decoration: none;
+   /* color: #575757; */
+   color: #fff;
+   transition: .3s ease-in-out;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0;
+}
+
+#navbar .nav-link {
+    line-height: 4rem;
+    font-size: 1.4rem;
+    padding: 15px 22px;
+    background-color: transparent;
+    border: none;
+    
+}
+
+#navbar .nav-link.active {
+    background-color: #29ca8e;
+    color: #fff;
+}
+
+#navbar .nav-link:hover {
+    background-color: #29ca8e;
+    color: #fff;
+}
+
+.main {
+    height: calc(100vh - 75px);
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slideshow-container .slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-container .slide .text {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: transparent;
+}
+
+.slideshow-container .slide .text h1 {
+    color: #fff;
+    font-size: 4.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    background-color: transparent;
+    /* user-select: none; */
+}
+
+.slideshow-container .slide .text h3 {
+    color: #f9f9f9;
+    background-color: transparent;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 5px 0 40px 0;
+    /* user-select: none; */
+    text-transform: capitalize;
+}
+
+.slideshow-container .slide .text a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    font-size: 1.6rem;
+    padding: 15px 30px;
+    transition: .5s;
+    color: #fff;
+}
+
+.slideshow-container .slide .text a:hover {
+    background-color: #fff;
+    color: #454545;
+}
+
+.slideshow-container .slide img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.slide {
+    display: none;
+}
+
+.footer {
+    background-color: #252020;
+    padding: 120px 0;
+    display: block;
+}
+
+.footer .container {
+    background-color: transparent;
+}
+
+.footer a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+.footer a h2 {
+    font-size: 5rem;
+    color: whitesmoke;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    .header .container {
+        flex-direction: column;
+    }
+}
