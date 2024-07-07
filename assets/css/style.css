@@ -240,4 +240,9 @@ body {
     .header .container {
         flex-direction: column;
     }
+
+    .slideshow-container .slide img {
+        object-fit: cover;
+        object-position: center;
+    }
 }
